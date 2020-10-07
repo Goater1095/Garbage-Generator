@@ -1,0 +1,74 @@
+<h1>你想對誰說幹話??</h1>
+{{!-- <div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4"> --}}
+<form action="/produce">
+
+  {{!-- card (avatar career text) --}}
+  //請問助教要怎麼把每個card的button的title 水平切齊 (弄了好久...弄不出來)
+  <div class="card-deck">
+    <div class="card">
+      <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+        class="card-img-top" alt="avatar-img">
+      <div class="card-body">
+        <h5 class="card-title">工程師</h5>
+        <p class="card-text">我是帥哥工程師.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="engineer">
+            <label class="form-check-label" for="exampleRadios1">
+              欠幹
+            </label>
+          </div>
+        </small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+        class="card-img-top" alt="avatar-img">
+      <div class="card-body">
+        <h5 class="card-title">設計師</h5>
+        <p class="card-text">我是正妹設計師.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="designer">
+            <label class="form-check-label" for="exampleRadios1">
+              欠幹
+            </label>
+          </div>
+        </small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+        class="card-img-top" alt="avatar-img">
+      <div class="card-body ">
+        <h5 class=" card-title ">創業家</h5>
+        <p class=" card-text ">我是天才創業家.</p>
+      </div>
+      <div class=" card-footer">
+        <small class="text-muted">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="entrepreneur">
+            <label class="form-check-label" for="exampleRadios1">
+              欠幹
+            </label>
+          </div>
+        </small>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Generator --}}
+  //請問助教要怎麼把 button 跟 alert 擺在同一列,然後alert 要延伸到最大 (弄了好久...也是弄不出來)
+  <button type="submit" class="btn btn-danger mt-3">產生幹話</button>
+  <div class="alert text-white bg-dark font-weight-bolder mt-2" role="alert">
+    {{trashTalk}}
+  </div>
+
+
+
+</form>
