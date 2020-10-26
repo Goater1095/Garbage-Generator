@@ -1,7 +1,7 @@
 <h1>你想對誰說幹話??</h1>
 {{!-- <div class="row row-cols-1 row-cols-md-3">
   <div class="col mb-4"> --}}
-<form action="/produce">
+<form action="/produce" method="POST">
 
   {{!-- card (avatar career text) --}}
   {{!-- //請問助教要怎麼把每個card的button的title 水平切齊 (弄了好久...弄不出來) --}}
@@ -16,7 +16,8 @@
       <div class="card-footer">
         <small class="text-muted">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="engineer">
+            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="engineer"
+              {{#if engineerOn}} checked {{/if}}>
             <label class="form-check-label" for="exampleRadios1">
               欠幹
             </label>
@@ -34,7 +35,8 @@
       <div class="card-footer">
         <small class="text-muted">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="designer">
+            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="designer"
+              {{#if designerOn}} checked {{/if}}>
             <label class="form-check-label" for="exampleRadios1">
               欠幹
             </label>
@@ -52,7 +54,8 @@
       <div class=" card-footer">
         <small class="text-muted">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="entrepreneur">
+            <input class="form-check-input" type="radio" name="career" id="exampleRadios1" value="entrepreneur"
+              {{#if entrepreneurOn}} checked {{/if}}>
             <label class="form-check-label" for="exampleRadios1">
               欠幹
             </label>
